@@ -19,8 +19,8 @@ const Box1 = Styled(Box)`
 margin-top:12rem;
 margin-left:85rem;
 margin-right:2rem;
-border-width: 5px;
-border-color: #D3D3D3;`;
+border: solid 5px #e64c94;
+`;
 function RegisterScreen() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -55,12 +55,12 @@ function RegisterScreen() {
       <H1Welcome>
         <Imgfocus src={focus} />
         <p>Seja Bem-Vindo</p>
-        <p>SHARK!</p>
+        <p style={{color: "#e64c94"}}>SHARK!</p>
 
+        <Sharkins></Sharkins>
       </H1Welcome>
-      <Sharkins></Sharkins>
 
-      <Box1 height='33rem' width='25rem' color='#394f5d'>
+      <Box1 height='35rem' width='25rem' color='#000'>
         <form onSubmit={HandleSubmit}>
           <H1_form>Login</H1_form>
           <br></br>

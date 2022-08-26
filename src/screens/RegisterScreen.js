@@ -45,7 +45,7 @@ function RegisterScreen() {
   }
   return(
     <Bodygradient>
-<Box1 height='43rem' width='25rem' color='#394f5d'>
+<Box1 height='43rem' width='25rem' color='#000'>
     <form onSubmit={HandleSubmit}>
       <H1_form>Cadastrar</H1_form>
   <Formlabel>

@@ -3,7 +3,6 @@ import audio from "../../assets/alarm_sound/alarm.mp4"
 
 function play_sound() {
     let som = new Audio(audio)
-    console.log("aa")
 
     setInterval(() => {
         let min = (new Date).getMinutes()

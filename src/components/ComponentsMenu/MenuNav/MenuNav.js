@@ -1,5 +1,6 @@
 import "./MenuNav.css";
 import React from "react";
+import { MdOutlineSettingsSuggest } from 'react-icons/md';
 
 export default class MenuNav extends React.Component {
 
@@ -13,9 +14,13 @@ export default class MenuNav extends React.Component {
     render() {
         return (
             <div>
-                <button className="btn_menu" onClick={this.openNav}>  </button>
+                <button className="btn_menu" onClick={this.openNav}> 
+                 <MdOutlineSettingsSuggest scale={100}/>
+                </button>
                 <div className="sidenav" style={{ width: this.state.size }}>
-                    <button className="btn_menu" onClick={this.openNav}>  </button>
+                    <button className="btn_menu" onClick={this.openNav}> 
+                        <MdOutlineSettingsSuggest scale={100}/>
+                    </button>
 
                     {this.props.children}
                 </div>

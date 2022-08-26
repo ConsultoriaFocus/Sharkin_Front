@@ -59,16 +59,16 @@ function UserActionsScreen() {
                 <MenuNav>
 
                     <ButtonNav><DownloadCsv file={sharkin}></DownloadCsv></ButtonNav>
+                    <ButtonNav onClick={HandleLogout}>logout</ButtonNav>
 
 
                 </MenuNav>
 
-                <Plogout onClick={HandleLogout}>logout</Plogout>
-                <H1High>Sharkins da Semana</H1High>
+                <H1High style={{color: "#e64c94"}}>Sharkins da Semana</H1High>
                 <SectionPlantao id='1'>
                     {
                         sharkin.slice(0).reverse().map((index) => {
-                            const Avatar = requires(index.User_Id.matricula);
+                            const Avatar = require('../assets/images/EduardaAraujo.jpeg');
                             return (
                                 <Card>
                                     <Imgcard src={Avatar} />

@@ -7,7 +7,7 @@ const FormInput=styled.input`
     border-radius: thin;
     margin-bottom:1rem;
     margin-left:2rem;
-    background-color:#263642;
+    background-color:#1D1D1B;
     height: 2.4rem;
     width:20rem;
     border-width: 3px;

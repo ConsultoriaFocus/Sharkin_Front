@@ -10,8 +10,13 @@
 
 .btn_menu {
     border: 0;
-    background-color: white;
-    height: 10px;
-    height: 10px;
+    background-color: transparent;
+
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    font-size: 50px;
+
 
 }
