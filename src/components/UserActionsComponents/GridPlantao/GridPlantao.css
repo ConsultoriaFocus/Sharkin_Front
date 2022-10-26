@@ -1,0 +1,22 @@
+.grid-container{
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-bottom: 100px;
+    width: 100%;
+    gap:15px 30px;
+    
+    background: rgb(0,0,0);
+
+}
+
+
+.grid-element{
+    padding: 2px 16px;
+    background-color:#263642;
+    color:white;
+    font-family:clear-sans, helvetica, sans-serif;
+    width:12.5rem;
+}

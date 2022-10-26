@@ -1,15 +1,14 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Bodygradient from '../components/FormComponents/Bodygradient';
 import {
-    Circle,
-    Plogout,
     H1High,
-    SectionPlantao,
-    requires,
     Card,
     Imgcard,
     Container,
-    Buttonshark
+    GridPlantao,
+    Footer,
+    Header,
+    ButtonShark
 } from '../components/UserActionsComponents/';
 import SharkinService from '../services/sharkin';
 import UsersService from '../services/users';
@@ -17,6 +16,7 @@ import { Navigate } from 'react-router-dom';
 import { MenuNav, ButtonNav } from '../components/ComponentsMenu';
 import DownloadCsv from "../components/DownloadCsv/DownloadCsv.js";
 import moment from 'moment';
+import requirees from "../components/UserActionsComponents/Requires.js";
 function UserActionsScreen() {
     const [sharkin, Setsharkin] = useState([]);
     const [logout, Setlogout] = useState(false);
@@ -56,19 +56,20 @@ function UserActionsScreen() {
     return (
         <Fragment>
             <Bodygradient>
+                
+                <Header>
+                    <H1High style={{ color: "#e64c94" }}>Sharkins da Semana</H1High>
+                </Header>
                 <MenuNav>
-
                     <ButtonNav><DownloadCsv file={sharkin}></DownloadCsv></ButtonNav>
-
-
+                    <ButtonNav onClick={HandleLogout}>logout</ButtonNav>
                 </MenuNav>
 
-                <Plogout onClick={HandleLogout}>logout</Plogout>
-                <H1High>Sharkins da Semana</H1High>
-                <SectionPlantao id='1'>
+
+                <GridPlantao >
                     {
                         sharkin.slice(0).reverse().map((index) => {
-                            const Avatar = requires(index.User_Id.matricula);
+                            const Avatar = requirees(index.User_Id.matricula);
                             return (
                                 <Card>
                                     <Imgcard src={Avatar} />
@@ -83,8 +84,12 @@ function UserActionsScreen() {
                     }
 
 
-                </SectionPlantao>
-                <Buttonshark onClick={Handleclick}>{messagebutton}</Buttonshark>
+                </GridPlantao>
+
+
+                <Footer>
+                    <ButtonShark onClick={Handleclick}>{messagebutton}</ButtonShark>
+                </Footer>
             </Bodygradient>
         </Fragment>
     );

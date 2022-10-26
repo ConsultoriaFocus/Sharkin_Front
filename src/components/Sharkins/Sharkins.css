@@ -1,0 +1,13 @@
+.text{
+font-size: 20px;
+
+
+}
+.card{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    align-items:center;
+    margin-bottom: 50px;
+
+}

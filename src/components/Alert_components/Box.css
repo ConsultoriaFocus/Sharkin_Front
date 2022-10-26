@@ -1,0 +1,25 @@
+.Box{
+    width:50vw;
+    margin-top: 5vh;
+    margin-left: 25vw;
+    height:25px;
+    position:fixed;
+    border-radius: 100px;
+    background-color:black;
+    /*box-shadow: 0px 0px var(--shadow_anim) 2px #FFFF00;
+*/
+    text-align: center;
+    padding-top: 5px;
+    font-family:clear-sans, helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFFF00;
+    animation-name: shadow;
+    animation-duration: 0.35s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes shadow {
+    from {box-shadow: 0px 0px 5px 2px #FFFF00;}
+    to {box-shadow: 0px 0px 25px 2px #FFFF00;}
+    
+}
