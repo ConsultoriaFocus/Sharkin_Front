@@ -21,15 +21,15 @@ export default function requirees (matricula) {
         case '221063043': return "https://drive.google.com/uc?id=1dHn7FBPC7rYrLFg8VZIEK6xpAd71nmpd";//require('../../assets/images/avatares/221063043/image.png');
         case '122063012': return "https://drive.google.com/uc?id=1nS21JqMsU4OxEOdJJTp5qFVo7pTidzWE";//require('../../assets/images/avatares/122063012/image.png');
         case '121063018': return "https://drive.google.com/uc?id=1sB6X5M9fkgL7y1OumKQ20Ph299k6cgJK";//require('../../assets/images/avatares/121063018/image.png');
-        case '120069014': return "https://drive.google.com/uc?id=";//require('../../assets/images/avatares/120069014/image.png');
-        case '120060034': return "https://drive.google.com/uc?id=";//require('../../assets/images/avatares/120060034/image.png');
+        case '120069014': return "https://drive.google.com/uc?id=1MLonFjSFTQR-b2IYNCwkrMNUaUngFmOK";//require('../../assets/images/avatares/120069014/image.png');
+        case '120060034': return "https://drive.google.com/uc?id=1DTuP6IgN0f-Y5uh7CR_zfu8gPX3-gD2q";//require('../../assets/images/avatares/120060034/image.png');
         case '220060071': return "https://drive.google.com/uc?id=1nkmawdxWg6RaJy2Z-Ukw-XPVJBRBuRFY";//require('../../assets/images/avatares/220060071/image.png');
-        case '122063021': return "https://drive.google.com/uc?id=";//require('../../assets/images/avatares/122063021/image.png');
-        case '122069031': return "https://drive.google.com/uc?id=";//require('../../assets/images/avatares/122069031/image.png');
+        case '122063021': return "https://drive.google.com/uc?id=13bZh_bQUY4PKRqL6_QCAy2APWBxwBWnc";//require('../../assets/images/avatares/122063021/image.png');
+        case '122069031': return "https://drive.google.com/uc?id=1JbPzl9np4jjR2fp5np6ch0VfjCwiqh9C";//require('../../assets/images/avatares/122069031/image.png');
         case '122063009': return "https://drive.google.com/uc?id=1Yjoq4R1hRuvfqTtTrf1KgSii0c8p8vng";//require('../../assets/images/avatares/122063009/image.png');
         case '122060009': return "https://drive.google.com/uc?id=15hemVOoWShPBHbcd0DPACKx_WduuhkSE";//require('../../assets/images/avatares/122060009/image.png');
         case '121060020': return "https://drive.google.com/uc?id=1gax6sf2446rj8oauRFT8S_nLFqzNDBwv";//require('../../assets/images/avatares/121060020/image.png');
-        case '122060038': return "https://drive.google.com/uc?id=";//require('../../assets/images/avatares/121060020/image.png');
+        case '122060038': return "https://drive.google.com/uc?id=1wIm37saQiyJdym5Vhsr3LkS0EA53hVOt";//require('../../assets/images/avatares/121060020/image.png');
     }
 };
 //https://drive.google.com/uc?id=1nkmawdxWg6RaJy2Z-Ukw-XPVJBRBuRFY
