@@ -1,21 +1,20 @@
-import Box from '../components/FormComponents/box.js';
-import H1_form from '../components/FormComponents/H1form.js';
-import Formlabel from '../components/FormComponents/Formlabel.js';
-import FormInput from '../components/FormComponents/FormInput.js';
-import Button_submit from '../components/FormComponents/Button_submit';
-import Bodygradient from '../components/FormComponents/Bodygradient.js';
-import Formspan from '../components/FormComponents/Formspan';
+import React, { useState } from 'react';
+import { Link, Navigate } from 'react-router-dom';
+import Styled from 'styled-components';
 import focus from '../assets/images/focus.png';
+import Box_Alert from '../components/Alert_components/Box_Alert.js';
+import Bodygradient from '../components/FormComponents/Bodygradient.js';
+import Box from '../components/FormComponents/box.js';
+import Button_submit from '../components/FormComponents/Button_submit';
+import FormInput from '../components/FormComponents/FormInput.js';
+import Formlabel from '../components/FormComponents/Formlabel.js';
+import Formspan from '../components/FormComponents/Formspan';
+import H1_form from '../components/FormComponents/H1form.js';
+import H1Welcome from '../components/FormComponents/H1Welcome';
 import Imgfocus from '../components/FormComponents/Imgfocus';
 import Paragraphform from '../components/FormComponents/Paragraphform';
-import React from 'react';
-import { useState } from 'react';
-import Styled from 'styled-components';
-import { Navigate } from 'react-router-dom';
+import Sharkins from '../components/Sharkins/Sharkins';
 import UserService from '../services/users.js';
-import H1Welcome from '../components/FormComponents/H1Welcome';
-import Sharkins from '../components/Sharkins/Sharkins'
-import Box_Alert from '../components/Alert_components/Box_Alert.js';
 const Box1 = Styled(Box)`
 margin-top:12rem;
 margin-left:85rem;
@@ -79,6 +78,9 @@ function RegisterScreen() {
 
         <br></br>
         <Paragraphform onClick={Handleparagraph}> Cadastrar </Paragraphform>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Link to="/ChangePassword">Esqueceu sua senha?</Link>
+        </div>
       </Box1>
     </Bodygradient>
   )

@@ -11,6 +11,7 @@ const UserService = {
         localStorage.removeItem('user', null);
         localStorage.removeItem('token', null);
         localStorage.removeItem('Emplantao', null);
-    }
+    },
+    changePassword: (params) => Api.put('/users/change-password', params)
 }
 export default UserService;
